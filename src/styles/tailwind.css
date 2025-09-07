@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary-background: #50806b;
+    --primary-foreground: #ffffff;
+    --primary-light: #506b52;
+    --primary-dark: #000000;
+
+    /* Secondary Colors */
+    --secondary-background: #ffffff;
+    --secondary-foreground: #000000;
+    --secondary-light: #e8edde;
+    --secondary-dark: #0d0d0d;
+
+    /* Accent Colors */
+    --accent-color: #d11e1e;
+    --accent-foreground: #ffffff;
+    --accent-light: #979797;
+    --accent-dark: #343434;
+
+    /* Border Colors */
+    --border-primary: #000000;
+    --border-secondary: #0000007f;
+    --border-light: #e2e4e5;
+    --border-dark: #1c275a;
+
+    /* Text Colors */
+    --text-primary: #000000;
+    --text-secondary: #343434;
+    --text-muted: #34343499;
+    --text-accent: #0000007f;
+
+    /* Background Colors */
+    --bg-main: #ffffff;
+    --bg-card: #e8edde;
+    --bg-overlay: #979797;
+
+    /* Component Colors */
+    --header-bg: #ffffff;
+    --header-text: #000000;
+    --button-bg: #50806b;
+    --button-text: #ffffff;
+    --button-border: #50806b;
+
+    /* Typography Variables */
+    --font-size-xs: 12px;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 17px;
+    --font-size-xl: 18px;
+    --font-size-2xl: 20px;
+    --font-size-3xl: 22px;
+    --font-size-4xl: 36px;
+    --font-size-5xl: 56px;
+    --font-size-6xl: 80px;
+
+    /* Font Weight Variables */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Height Variables */
+    --line-height-xs: 16px;
+    --line-height-sm: 18px;
+    --line-height-base: 19px;
+    --line-height-md: 20px;
+    --line-height-lg: 22px;
+    --line-height-xl: 24px;
+    --line-height-2xl: 25px;
+    --line-height-3xl: 28px;
+    --line-height-4xl: 33px;
+    --line-height-5xl: 44px;
+    --line-height-6xl: 54px;
+    --line-height-7xl: 84px;
+    --line-height-8xl: 120px;
+
+    /* Spacing Variables */
+    --spacing-xs: 4px;
+    --spacing-sm: 6px;
+    --spacing-base: 8px;
+    --spacing-md: 10px;
+    --spacing-lg: 12px;
+    --spacing-xl: 14px;
+    --spacing-2xl: 16px;
+    --spacing-3xl: 18px;
+    --spacing-4xl: 20px;
+    --spacing-5xl: 22px;
+    --spacing-6xl: 24px;
+    --spacing-7xl: 28px;
+    --spacing-8xl: 32px;
+    --spacing-9xl: 38px;
+    --spacing-10xl: 46px;
+    --spacing-11xl: 50px;
+    --spacing-12xl: 60px;
+    --spacing-13xl: 62px;
+    --spacing-14xl: 82px;
+    --spacing-15xl: 96px;
+    --spacing-16xl: 120px;
+    --spacing-17xl: 122px;
+
+    /* Border Radius Variables */
+    --radius-xs: 3px;
+    --radius-sm: 4px;
+    --radius-base: 8px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 20px;
+
+    /* Layout Variables */
+    --width-xs: 20px;
+    --width-sm: 22px;
+    --width-base: 24px;
+    --width-md: 28px;
+    --width-lg: 32px;
+    --width-xl: 40px;
+    --width-2xl: 174px;
+    --width-3xl: 270px;
+    --width-4xl: 282px;
+    --width-5xl: 1230px;
+  }
+}
