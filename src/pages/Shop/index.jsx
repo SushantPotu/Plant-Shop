@@ -248,8 +248,8 @@ const Shop = () => {
                     {/* Plant Categories */}
                   <div className="flex flex-col gap-[8px] w-full ml-[8px] mt-[8px]">
                     {[
-                      { type: 'Alocasia', as: 'div' },
-                      { type: 'Hoya', as: 'span' },
+                      { type: 'Alocasia', as: 'p' },
+                      { type: 'Hoya', as: 'p' },
                       { type: 'Sansevieria', as: 'p' },
                       { type: 'Syngonium', as: 'p' }
                     ].map(({ type, as }, idx) => {
@@ -490,8 +490,8 @@ const Shop = () => {
                         className="flex flex-col gap-[14px] justify-start items-center w-full h-auto shadow-[0px_8px_23px_#506b5221] bg-secondary-background rounded-xl p-[20px] hover:shadow-lg transition-shadow"
                       >
                         <img
-                          src={product.image}
-                          alt={product.name}
+                          src={product.image || "/images/placeholder.svg"}
+                          alt={product.name || "No image"}
                           className="w-full rounded-base object-cover"
                           style={{ width: '242px', height: '174px' }}
                         />

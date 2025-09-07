@@ -53,7 +53,7 @@ const Dropdown = ({
   const dropdownRef = useRef(null);
 
   // Validate optional Tailwind classes
-  const optionalClasses = [
+  const tailwindClasses = [
     layout_width ? `w-[${layout_width}]` : '',
     padding ? `p-[${padding}]` : '',
     margin ? `m-[${margin}]` : '',
@@ -96,7 +96,7 @@ const Dropdown = ({
   return (
     <div
       ref={dropdownRef}
-      className={twMerge(dropdownClasses({ variant, size }), optionalClasses, className)}
+      className={twMerge(dropdownClasses({ variant, size }), tailwindClasses, className)}
       {...props}
     >
       <button

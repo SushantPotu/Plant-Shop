@@ -25,7 +25,6 @@ const buttonClasses = cva(
 );
 
 const Button = ({
-  // Required parameters with defaults
   text = "Buy",
   text_font_size = "20",
   text_font_family = "Open Sans",
@@ -37,7 +36,6 @@ const Button = ({
   border_border_radius = "8px",
   effect_box_shadow = "0px 8px 23px #506b5221",
   
-  // Optional parameters (no defaults)
   text_text_transform,
   border_border,
   layout_align_self,
@@ -46,7 +44,6 @@ const Button = ({
   position,
   margin,
   
-  // Standard React props
   variant,
   size,
   disabled = false,
@@ -56,7 +53,8 @@ const Button = ({
   type = "button",
   ...props
 }) => {
-  // Safe validation for optional parameters
+  
+  // validation 
   const hasValidTextTransform = text_text_transform && typeof text_text_transform === 'string' && text_text_transform?.trim() !== '';
   const hasValidBorder = border_border && typeof border_border === 'string' && border_border?.trim() !== '';
   const hasValidAlignSelf = layout_align_self && typeof layout_align_self === 'string' && layout_align_self?.trim() !== '';
@@ -65,8 +63,7 @@ const Button = ({
   const hasValidPosition = position && typeof position === 'string' && position?.trim() !== '';
   const hasValidMargin = margin && typeof margin === 'string' && margin?.trim() !== '';
 
-  // Build optional Tailwind classes
-  const optionalClasses = [
+  const tailwindClasses = [
     hasValidTextTransform ? `${text_text_transform}` : '',
     hasValidBorder ? `border-[${border_border}]` : '',
     hasValidAlignSelf ? `self-${layout_align_self}` : '',
@@ -105,7 +102,7 @@ const Button = ({
       style={buttonStyles}
       className={twMerge(
         buttonClasses({ variant, size }),
-        optionalClasses,
+        tailwindClasses,
         className
       )}
       aria-disabled={disabled}

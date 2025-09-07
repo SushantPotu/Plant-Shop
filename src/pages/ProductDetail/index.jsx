@@ -22,7 +22,7 @@ function getItems() {
 
 function setItems(items) {
   localStorage.setItem(CART_KEY, JSON.stringify(items));
-  window.dispatchEvent(new Event("cart:updated")); // updates Header count
+  window.dispatchEvent(new Event("cart:updated")); 
 }
 
 function addItem(item) {
@@ -141,10 +141,10 @@ const ProductDetail = () => {
                       <img
                         src={plant.default_image?.medium_url}
                         alt={plant.common_name}
-                        className="w-full h-[270px] object-cover rounded-lg col-span-2"
+                        className="w-full h-[370px] object-cover rounded-lg col-span-2"
                       />
                     ) : (
-                      <div className="w-full h-[270px] bg-gray-200 rounded-lg flex items-center justify-center">
+                      <div className="w-full h-[370px] bg-gray-200 rounded-lg flex items-center justify-center">
                         No image available
                       </div>
                     )}
@@ -191,7 +191,7 @@ const ProductDetail = () => {
 
                       
 
-                      {/* Quantity + Add to Cart */}
+                      {/* Qty / Add to cart controls */}
                       <div className="flex flex-col sm:flex-row gap-4 mt-8 items-center">
 
                          {/* Qty control */}
@@ -213,6 +213,7 @@ const ProductDetail = () => {
                                +
                              </button>
                            </div>
+                          {/* Add to Cart button controls*/}
                         <Button
                             text="ADD TO CART"
                             text_font_size="16"
@@ -247,10 +248,10 @@ const ProductDetail = () => {
             </div>
           </section>
 
-          {/* Plant Care */}
+          {/* Plant Care section*/}
           <section className="w-full mt-[80px] bg-secondary-light py-8">
             <div className="max-w-[1000px] mx-auto px-6">
-              <h3 className="text-2xl font-semibold mb-4">Plant Care</h3>
+              <h3 className="text-3xl font-semibold mb-4">Plant Care</h3>
               <p><strong>Watering:</strong> {plant.watering || "Moderate"}</p>
               <p><strong>Sunlight:</strong> {plant.sunlight?.join(", ") || "Indirect"}</p>
               <p><strong>Growth Habit:</strong> {plant.growth_habit || "Perennial"}</p>
